@@ -1,0 +1,27 @@
+{
+    "name": "sudo/pay",
+    "description": "Tích hợp thanh toán onepay và alepay",
+    "type": "library",
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "authors": [
+        {
+            "name": "NDT",
+            "email": "dtruong245@gmail.com"
+        }
+    ],
+    
+    "autoload": {
+        "psr-4": {
+            "Sudo\\Pay\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Sudo\\Pay\\Providers\\PayServiceProvider"
+            ],
+            "aliases": {}
+        }
+    }
+}
